@@ -47,7 +47,9 @@ footer {
 }
 
 nav {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     width: 600px;
 }
 nav a {
@@ -61,7 +63,16 @@ hr {
 }
 
 header {
+    width: 1000px;
     margin: auto;
+}
+header img {
+    width: 100%;
+}
+@media screen and (max-width: 650px) {
+    header {
+        width: 100%;
+    }
 }
 
 /* autre */
