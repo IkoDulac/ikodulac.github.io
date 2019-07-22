@@ -59,6 +59,12 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+header {
+    margin: auto;
+}
+
+/* autre */
 a:hover {
     color: hotpink;
 }
