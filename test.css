@@ -50,7 +50,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 600px;
+    width: 550px;
 }
 nav a {
     margin-right: 15px;
@@ -75,14 +75,22 @@ header img {
     }
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* autre */
 a:hover {
     color: hotpink;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+li {
+	list-style-image: url('/img/list_icon.png');
+}
+
+h1,h2,h3,h4,h5 {
+	color: #314263;
 }
 
