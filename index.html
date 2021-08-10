@@ -1,45 +1,229 @@
 <!DOCTYPE html>
-<!--Document de travail, premier jet-->
 <html>
- <head>
-  <title>Atelier Vélo-Cité</title>
-  <meta name="description" content="info sur l’atelier de vélo communautaire de Rimouski">
-  <meta name="keywords" content="velo, bike, bicyclette, atelier, communautaire, Rimouski, réparation, entretien, DIY">
-  <meta name="author" content="iko">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="test.css" />
-  <style>
-  </style>
- </head>
- <body>
-  <header><img src="/img/rim_header.gif" alt="logo Atelier Vélo"></header>
-  <nav>
-    <a href="index.html" title="Page titre">Vélocité&#8209;Rimouski</a>
-    <a href="rimbenevoles.html" title="benevoles">S'impliquer</a>
-    <!--<a class="head" href="rimforum.php" target="_blank" title="forum">Forum&nbsp;des&nbsp;membres</a>-->
-    <a href="rimformations.html" title="formations" target="_self">Formations&nbsp;mécanique&nbsp;vélo</a>
-    <a href="rimcontacts.html" title="contacts" target="_self">Nous&nbsp;contacter</a>
-  </nav>
-  <section class="clearfix">
-  <article><div>
-   <h2>Présentation du projet</h2>
-   <p>Vélo-Cité est un organisme à but non-lucratif opéré à 100% par ses membres volontaires, avec pour objectif de faire rouler des vélos dans les rues de Rimouski. Créé en 2014 lorsqu'un petit groupe de cyclistes a acquis un ensemble d'outils de réparation, l'atelier était alors situé au sous-sol de l'école Langevin puis, ensuite, au sous-sol chez Mathieu. Nous sortons enfin des ténèbres pour nous instataller dans les garages du Grand séminaire de Rimouski !</p>
-   <p>Le garage se veut un lieu d’échange et d’entraide ouvert à toutes et à tous où l'on peut utiliser les outils pour réparer et apprendre à réparer des vélos. Ouvert la plupart du temps en mode "libre service", nous donnons aussi des <a href="rimformations.html" title="formations" target="_self">formations de mécanique vélo</a> à l'occasion.</p>
-   <p>L'utilisation du garage est gratuit mais il est fortement suggéré que vous offriez une heure de travail pour chaque heure passée sur un projet personnel, ceci afin de garder l'atelier vivant. Si vous n'avez pas de temps pour du bénévolat, les donations en argent sont aussi appréciées. N'hésitez pas à nous contactez si vous avez des questions / propositions pour nous.</p>
-   <p>Concernant les heures d'ouverture de l'atelier, vous en voulez davantage ? Nous aussi, <a href="rimbenevoles.html" title="benevoles">impliquez vous</a> ! Pas besoin d'être un professionnel de la mécanique ;)</p>
-   <hr />
-   </div>
-  </article>
+<title>verger NNMA</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="verger, orchard, community, commun, communauté, Pointe-a-la-croix, pomme, pommes, apples, fruits, organic, biologique">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+body, html {
+  height: 100%;
+  Font-family: "Georgia";
+  background-image: url("img/pommes_background.jpg");
+}
 
-  <aside>
-    <div>Notre page FB : <a href="https://www.facebook.com/groups/coop.velo.rimouski/"><img src="/img/smallFB.gif" alt="logo facebook"></a>
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/pommeEnFete.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="#" class="w3-button w3-block w3-black">accueil</a>
     </div>
-    <hr />
-    <div>
-    <iframe src="https://calendar.google.com/calendar/b/1/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=YXRlbGllci52ZWxvY2l0ZUBnbWFpbC5jb20&amp;src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%230B8043&amp;showDate=0&amp;showPrint=0&amp;mode=AGENDA&amp;title=horaire%20du%20garage" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe></div>
-  </aside>
-  </section>
-  <footer>© 2019 Vélo-Cité. page web par Iko. Hébergé par https://pages.github.com</footer>
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button w3-block w3-black">le verger</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#pommes" class="w3-button w3-block w3-black">les pommes</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#photo" class="w3-button w3-block w3-black">gallerie photo</a>
+    </div>
 
- </body>
+    <div class="w3-col s2">
+      <a href="#where" class="w3-button w3-block w3-black">nous trouver</a>
+    </div>
+      </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Ouvert la fin de semaine de 9am à 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">verger NNMA<br>(Pomme en Fête)</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 rue du Verger, Pointe-à-la-Croix</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">À propos du verger</span></h5>
+    <p>Nourrir notre monde a pris en charge le verger pour s'assurer que les efforts nécessaires sont déployés pour honorer le travail de feu Rodrigue Guitard en maintenant le verger en santé et, ainsi, continuer de fournir les environs en pommes (et plus !).</p>
+    <p>Le verger est en transition vers une régie biologique et n'utilise plus d'intrants chimiques depuis plus d'un an. Aussi, dans le but de développer un sentiment d'appartenance au verger et un intérêt pour la pomiculture dans la population, nous offrons un échange travail-fruits et nous encourageons toutes sortes de collaborations et de partage (de connaissance, de savoir-faire, de blagues, de recettes...). Pour en savoir d'avantage, n'hésitez pas à nous contacter !</p>
+    <p>En se souhaitant une belle récolte 2021 et en espérant vous y voir,</p>
+    <p>Iko Lachapelle, à la coordination des soins, pour Nourrir notre Monde Avignon.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="pommes">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nos pommes</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'aout');" id="myLink">
+        <div class="w3-col s6 tablink">Aout</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'sept');">
+        <div class="w3-col s6 tablink">Septembre</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'oct');">
+        <div class="w3-col s6 tablink">Octobre</div>
+      </a>
+
+    </div>
+
+    <div id="aout" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Jaune transparente</h5>
+      <p class="w3-text-grey">La pomme à compote par excellence, de la compote pareille comme la celle de grand-mère. C'est aussi celle qu'on aime pour le beurre de pomme, les cuirs de fruits et les gâteaux à la compote.</p><br>
+    
+      <h5>Lodi</h5>
+      <p class="w3-text-grey">La petite pomme sûre, mais sucrée du début d'août.</p><br>
+    
+      <h5>Norland</h5>
+      <p class="w3-text-grey">Pomme à tarte ou à jus, avec du caractère !</p><br>
+    
+      <h5>Battleford</h5>
+      <p class="w3-text-grey">Ne vous laissez pas tromper par sa couleur, elle n'est pas verte de jalousie et n'a rien à envier à ses consoeurs plus rouges ; douce et juteuse, parfaite pour les chaleurs de l'été.</p><br>
+    
+      <h5>Jersey-mac</h5>
+      <p class="w3-text-grey">Semblable à sa célèbre cousine, juste un peu plus petite.</p><br>
+
+      <h5>Beacon</h5>
+      <p class="w3-text-grey">Rouge comme l'amour, douce comme le jour.</p>
+    </div>
+
+    <div id="sept" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Red free</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Lobo</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Macintosh</h5>
+      <p class="w3-text-grey">Le clône favori de tous les vergers.</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>
+
+      <div id="oct" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Red free</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Lobo</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Macintosh</h5>
+      <p class="w3-text-grey">Le clône favori de tous les vergers.</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div> 
+
+  </div>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-container" id="photo">
+  <div class="w3-content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Gallerie Photo</span></h5>
+ 
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/sound.jpg" style="width:100%">
+    <img src="/w3images/woods.jpg" style="width:100%">
+    <img src="/w3images/rock.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/coffee.jpg" style="width:100%">
+    <img src="/w3images/bridge.jpg" style="width:100%">
+    <img src="/w3images/notebook.jpg" style="width:100%">
+    <img src="/w3images/london.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/workbench.jpg" style="width:100%">
+    <img src="/w3images/gondol.jpg" style="width:100%">
+    <img src="/w3images/skies.jpg" style="width:100%">
+    <img src="/w3images/lights.jpg" style="width:100%">
+    <img src="/w3images/workshop.jpg" style="width:100%">
+  </div>
+</div>
+  </div>
+</div>
+ 
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Venez nous visiter, rue du Verger, à Pointe-à-la-Croix !</p>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-66.72142982482912%2C48.06436450109061%2C-66.70691370964052%2C48.07022925255805&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.06730/-66.71417">Voir sur open street map</a></small>
+    <p><span class="w3-tag">Saison 2021</span> L'autocueillette ne sera disponible que pour les groupes, sur réservation.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-8">
+  <p>Template du site sur : <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-blue">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>
+
