@@ -18,42 +18,53 @@ body, html {
   background-image: url("img/pommeEnFete.jpg");
   min-height: 75%;
 }
+.bgimg2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/pommes_background.jpg");
+  min-height: 75%;
+}
 
 .menu {
   display: none;
 }
+
+.tablink:active{ background-color:#000;
+
+
+
 </style>
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+	<div class="w3-row w3-padding w3-black">
     <div class="w3-col s2">
-      <a href="#" class="w3-button w3-block w3-black">accueil</a>
+	    <a href="#" class="w3-button w3-block w3-black pom-hover-bgimg"><h4>accueil</h4></a>
     </div>
     <div class="w3-col s2">
-      <a href="#about" class="w3-button w3-block w3-black">le verger</a>
+	    <a href="#about" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -200px 0;"><h4>le verger</h4></a>
     </div>
     <div class="w3-col s2">
-      <a href="#pommes" class="w3-button w3-block w3-black">les pommes</a>
+	    <a href="#pommes" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -400px 0;"><h4>les pommes</h4></a>
     </div>
     <div class="w3-col s2">
-      <a href="#photo" class="w3-button w3-block w3-black">gallerie photo</a>
+	    <a href="#photo" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -600px 0;"><h4>gallerie photo</h4></a>
     </div>
 
     <div class="w3-col s2">
-      <a href="#where" class="w3-button w3-block w3-black">nous trouver</a>
+	    <a href="#where" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -800px 0;"><h4>nous trouver</h4></a>
     </div>
       </div>
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg w3-display-container" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
     <span class="w3-tag">Ouvert la fin de semaine de 9am à 5pm</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">verger NNMA<br>(Pomme en Fête)</span>
+    <span class="w3-text-white" style="font-size:80px;">verger NNMA<br>(Pomme en Fête)</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">15 rue du Verger, Pointe-à-la-Croix</span>
@@ -61,14 +72,14 @@ body, html {
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class="w3-sand w3-large">
 
 <!-- About Container -->
 <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content" style="max-width:700px; text-align:justify;">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">À propos du verger</span></h5>
-    <p>Nourrir notre monde a pris en charge le verger pour s'assurer que les efforts nécessaires sont déployés pour honorer le travail de feu Rodrigue Guitard en maintenant le verger en santé et, ainsi, continuer de fournir les environs en pommes (et plus !).</p>
-    <p>Le verger est en transition vers une régie biologique et n'utilise plus d'intrants chimiques depuis plus d'un an. Aussi, dans le but de développer un sentiment d'appartenance au verger et un intérêt pour la pomiculture dans la population, nous offrons un échange travail-fruits et nous encourageons toutes sortes de collaborations et de partage (de connaissance, de savoir-faire, de blagues, de recettes...). Pour en savoir d'avantage, n'hésitez pas à nous contacter !</p>
+    <p>Saison 2021, Nourrir notre monde a pris en charge le verger afin de s'assurer que les efforts nécessaires sont déployés pour honorer le travail de feu Rodrigue Guitard en maintenant le verger en santé et, ainsi, continuer de se fournir en pommes (et plus !).</p>
+    <p>Le verger est en transition vers une régie biologique et n'utilise plus d'intrants chimiques depuis plus d'un an. Aussi, nous voulons l'opérer de façon communautaire, c'est-à-dire pour et PAR les intéressées des environs. Par exemple, nous offrons un échange travail-fruits où l'on peut contribuer aux tâches du verger et repartir avec des pommes et des produits transformés (jus, cuir, etc.). Nous croyons qu'avec le partage de connaissances et de savoirs-faire il est possible de propager un intérêt et de mettre à profit l'intelligence collective dans le développement d'une expertise pour la pomiculture. Pour en savoir d'avantage, n'hésitez pas à nous contacter !</p>
     <p>En se souhaitant une belle récolte 2021 et en espérant vous y voir,</p>
     <p>Iko Lachapelle, à la coordination des soins, pour Nourrir notre Monde Avignon.</p>
   </div>
@@ -79,6 +90,10 @@ body, html {
   <div class="w3-content" style="max-width:700px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nos pommes</span></h5>
+
+    <div style="text-align:justify;"><p>Cette année est particulièrement difficile. Nous sommes arrivées très tard, (au mois de juin) dans un verger sans pomiculteurs depuis deux printemps. De surcroit, après un mois de mai anormalement chaud, les arbres ont fleuri avant le temps et ont été durement affectés par le gel. Résultat : les trois quarts des fleurs (et de la récolte) ont avorté. Les quantités restantes ne justifiaient pas les investissements nécessaires aux traitements insecticides biologiques et les pommes sont piquées par <i>Rhagoletis pomonella</i>, la mouche de la pomme. Nous nous en excusons d'avance, mais nous trouvons tout de même que les pommes sont bonnes à croquer et certainement adéquate pour la cuisson.</p></div>
+
+    <p style="text-align:right;"><b>Prix</b> : panier de ~11.5 lb = $8.50<br>minot de ~40lb = $25</p>
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'aout');" id="myLink">
@@ -94,24 +109,25 @@ body, html {
     </div>
 
     <div id="aout" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Jaune transparente</h5>
-      <p class="w3-text-grey">La pomme à compote par excellence, de la compote pareille comme la celle de grand-mère. C'est aussi celle qu'on aime pour le beurre de pomme, les cuirs de fruits et les gâteaux à la compote.</p><br>
-    
-      <h5>Lodi</h5>
-      <p class="w3-text-grey">La petite pomme sûre, mais sucrée du début d'août.</p><br>
-    
-      <h5>Norland</h5>
-      <p class="w3-text-grey">Pomme à tarte ou à jus, avec du caractère !</p><br>
-    
-      <h5>Battleford</h5>
-      <p class="w3-text-grey">Ne vous laissez pas tromper par sa couleur, elle n'est pas verte de jalousie et n'a rien à envier à ses consoeurs plus rouges ; douce et juteuse, parfaite pour les chaleurs de l'été.</p><br>
-    
-      <h5>Jersey-mac</h5>
-      <p class="w3-text-grey">Semblable à sa célèbre cousine, juste un peu plus petite.</p><br>
+	    <table class="w3-table">
+		    <tr><th>Jaune transparente</th><td style="text-align:right;">cueillie le 5 août</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/jaune.jpg" style="width:100px; height:100px; float:right; padding-left:10px">La pomme à compote par excellence, pareille à la celle de grand-mère. C'est aussi celle qu'on aime pour le beurre de pomme, les cuirs de fruits et les gâteaux à la compote.</td>
 
-      <h5>Beacon</h5>
-      <p class="w3-text-grey">Rouge comme l'amour, douce comme le jour.</p>
-    </div>
+		<tr><th>Lodi</th><td style="text-align:right;">cueillie le 4 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/lodi.jpg" style="width:133px; height:100px; float:right; padding-left:10px">La petite pomme sûre, mais sucrée du début d'août. Aussi pour la compote.</td>
+			
+		<tr><th>Norland</th><td style="text-align:right;">cueillie le 10 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland.jpg" style="width:133px; height:100px; float:right; padding-left:10px">Pomme à croquer, à tarte ou à jus, avec du caractère !</td>	    		
+		<tr><th>Battleford</th><td style="text-align:right;">cueillie le 8 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/battleford.jpg" style="width:133px; height:100px; float:right; padding-left:10px">Ne vous laissez pas tromper par sa couleur, elle n'est pas verte de jalousie et n'a rien à envier à ses consoeurs plus rouges ; douce et juteuse, parfaite pour les chaleurs déréglées de l'été.</td>
+    
+		<tr><th>Jersey-mac</th><td style="text-align:right;">cueillie le 15 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland_3a.jpg" style="width:100px; height:100px; float:right; padding-left:10px">Semblable à sa célèbre cousine, mais plus douce et avec un arôme presque floral.</td>
+
+		<tr><th>Beacon</th><td style="text-align:right;">cueillie le 17 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland_3a.jpg" style="width:100px; height:100px; float:right; padding-left:10px">Rouge comme l'amour, douce comme le jour, rien à voir avec le scientifique du même nom.</td>
+	    </table>
+	</div>
 
     <div id="sept" class="w3-container menu w3-padding-48 w3-card">
       <h5>Red free</h5>
@@ -191,7 +207,7 @@ body, html {
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
     <p>Venez nous visiter, rue du Verger, à Pointe-à-la-Croix !</p>
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-66.72142982482912%2C48.06436450109061%2C-66.70691370964052%2C48.07022925255805&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.06730/-66.71417">Voir sur open street map</a></small>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-66.72142982482912%2C48.06436450109061%2C-66.70691370964052%2C48.07022925255805&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.06730/-66.71417">Voir sur openStreetMap</a></small>
     <p><span class="w3-tag">Saison 2021</span> L'autocueillette ne sera disponible que pour les groupes, sur réservation.</p>
     <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
     </form>
@@ -202,7 +218,7 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-8">
+<footer class="w3-center w3-padding-8">
   <p>Template du site sur : <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-blue">w3.css</a></p>
 </footer>
 
@@ -216,10 +232,10 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    tablinks[i].className = tablinks[i].className.replace(" pom-bgimg-tab", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  evt.currentTarget.firstElementChild.className += " pom-bgimg-tab";
 }
 document.getElementById("myLink").click();
 </script>
