@@ -19,8 +19,20 @@ body, html {
   background-size: cover;
   background-image: url("img/pommeEnFete.jpg");
   min-height: 75%;
-  /*max-width:100%;*/
-  height:auto;
+}
+
+.pom-title{font-size:4.5em;}
+@media screen and (max-width:650px){
+	.bgimg{
+		min-height:450px;}
+	.pom-title{
+		font-size:3em;}
+	.w3-button{
+		padding:4px 0px;}
+	.w3-col.s2,.w3-col.s3{
+		width:33.32%;}
+	.w3-display-middle{
+		padding-top:50px;}
 }
 
 .menu {
@@ -34,20 +46,20 @@ body, html {
 <!-- Links (sit on top) -->
 <div class="w3-top">
 	<div class="w3-row w3-padding w3-black">
-    <div class="w3-col s2">
+    <div class="w3-col s3">
 	    <a href="#" class="w3-button w3-block w3-black pom-hover-bgimg"><h4>accueil</h4></a>
     </div>
-    <div class="w3-col s2">
+    <div class="w3-col s3">
 	    <a href="#about" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -200px 0;"><h4>le verger</h4></a>
     </div>
-    <div class="w3-col s2">
+    <div class="w3-col s3">
 	    <a href="#pommes" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -400px 0;"><h4>les pommes</h4></a>
     </div>
-    <div class="w3-col s2">
+    <!-- <div class="w3-col s2">
 	    <a href="#photo" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -600px 0;"><h4>gallerie photo</h4></a>
-    </div>
+    </div> -->
 
-    <div class="w3-col s2">
+    <div class="w3-col s3">
 	    <a href="#where" class="w3-button w3-block w3-black pom-hover-bgimg" style="background-position: -800px 0;"><h4>nous trouver</h4></a>
     </div>
       </div>
@@ -59,7 +71,7 @@ body, html {
     <span class="w3-tag">Ouvert la fin de semaine de 9am à 5pm</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:80px;">verger NNMA<br>(Pomme en Fête)</span>
+    <span class="w3-text-white pom-title">verger NNMA<br>(Pomme en Fête)</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">15 rue du Verger, Pointe-à-la-Croix</span>
@@ -120,8 +132,8 @@ body, html {
 		<tr><th>Jersey-mac</th><td style="text-align:right;">cueillie le 15 aout</td></tr>
 		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland_3a.jpg" style="width:100px; height:100px; float:right; padding-left:10px">Semblable à sa célèbre cousine, mais plus douce et avec un arôme presque floral.</td>
 
-		<tr><th>Beacon</th><td style="text-align:right;">cueillie le 17 aout</td></tr>
-		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland_3a.jpg" style="width:100px; height:100px; float:right; padding-left:10px">Rouge comme l'amour, douce comme le jour, rien à voir avec le scientifique du même nom.</td>
+		<tr><th>Viking</th><td style="text-align:right;">cueillie le 17 aout</td></tr>
+		<tr><td colspan="2" class="w3-text-grey"><img src="img/norland_3a.jpg" style="width:100px; height:100px; float:right; padding-left:10px">Rouge comme l'amour, douce comme le jour, rien à voir avec les hordes sanginaires du même nom. Conserve bien sa saveur à la cuisson.</td>
 	    </table>
 	</div>
 
@@ -163,6 +175,7 @@ body, html {
 </div>
 
 <!-- Photo Grid -->
+<!-- 
 <div class="w3-container" id="photo">
   <div class="w3-content" style="max-width:700px">
 	  <br>
@@ -198,12 +211,13 @@ body, html {
 </div>
   </div>
 </div>
- 
+--> 
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nous trouver</span></h5>
     <p>Venez nous visiter, rue du Verger, à Pointe-à-la-Croix !</p>
+    <p>Ouvert les samedis et dimanches de 9h à 17h.</p>
     <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-66.72142982482912%2C48.06436450109061%2C-66.70691370964052%2C48.07022925255805&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.06730/-66.71417">Voir sur openStreetMap</a></small>
     <p><span class="w3-tag">Saison 2021</span> L'autocueillette ne sera disponible que pour les groupes, sur réservation.</p>
   </div>
