@@ -239,6 +239,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*custom verger*/
 .pom-bgimg,.pom-hover-bgimg:hover{color:#fff!important; background-image:url("../img/pommes_background.jpg"); background-size:1000px;}
-.pom-bgimg-tab{color:#fff!important; background-image:url("../img/pommes_background.jpg"); background-size:1000px; background-position:-100px 0;}
+.pom-bgimg-tab{color:#fff!important; background-image:url("../img/pommes_background.jpg"); background-size:1000px; background-position:-150px 0;}
 .pom-table.th{text-align:left;}
 .pom-table.td{text-align:right; color:#757575;}
